@@ -73,19 +73,23 @@ test/
 
 1. Add README.md and *everything* in the `src` directory to the git staging area.
    ```
-   todo  your answer here
+   git add .
    ```
 
 2. Add `test/test_a.py` to the staging area (but not any other files).
    ```
-   todo  your answer here
+   git add test/test_a.py
    ```
 
 3. List the files in the staging area.
-
+   ```
+   git status
+   ```
 
 4. Remove `README.md` from the staging area. (Useful if you accidentally add something you don't want to commit.)
-
+   ```
+   git rm README.md
+   ```
 
 5. Commit everything in the staging area to the repository.
 

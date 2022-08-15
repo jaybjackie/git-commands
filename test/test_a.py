@@ -1,0 +1,1 @@
+print("type a all along the file.")
