@@ -17,13 +17,13 @@
 
 > TODO: Create a table of contents here.  Each line should be a clickable link to each part of this document or another file containing the questions and answers. One item per line.
 
-[Basics](#basics)    
-[Adding and Changing Things](#adding-and-changing-things)    
-[Next Section (todo: Fix This)](#next-section)    
-[Next Section (todo: Fix This)](#next-next-section)    
-[Commands for Remotes](remote-commands.md)   
-[Favorites](#favorites)     
-[Resources](#resources)
+- [Basics](#basics)    
+- [Adding and Changing Things](#adding-and-changing-things)    
+- [Undo Changes and Recover Files](#undo-changes-and-recover-files)
+- [Branch and Merge](#branch-and-merge)    
+- [Commands for Remotes](remote-commands.md)   
+- [Favorites](#favorites)     
+- [Resources](#resources)
 
 #### Note on Paths
 
@@ -33,24 +33,26 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 ## Basics
 
 1. When using Git locally, what are these?  Define each one in a sentence
-   * Staging area -
-   * Working copy -
-   * master -
-   * HEAD -
+   * Staging area - The area of modified file to go into next commit snapshot.
+   * Working copy - A copy of all files in the git repository.
+   * master - The name of branch when create a new repository.
+   * HEAD - The current working branch.
 
 2. When you install git on a new machine (or in a new user account) you should perform these 2 git commands to tell git your name and email.  These values are used in commits that you make:
    ```
-   # Git configuration commands for a new account
-
-
+      git config --global user.name "<username>"
+      git config --global user.email <user-email>
    ```
 
 3. There are 2 ways to create a local Git repository.  What are they?
-   - todo: briefly describe first way
-   - todo: briefly describe second way
+   - $ git init - to use your current working directory to be git local repositoy.
+   - $ git clone url - to clone the a repository from a given url.
 
 4. When you create a git repository by entering `git init`, Git will create a "hidden" directory for the local repository.  Where is the directory for this local repository (relative to the directory where you typed "git init")?
 
+```
+/Users/jayb/Documents/university/ISP/week1/git-commands
+```
 
 
 ## Adding and Changing Things
