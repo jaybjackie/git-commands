@@ -69,7 +69,6 @@ test/
     test_a.py
     ...
 ```     
-> TODO: Write the git command to perform each of these:
 
 1. Add README.md and *everything* in the `src` directory to the git staging area.
    ```
@@ -241,29 +240,23 @@ When changed the same part of the same file differently in the two branches that
 
 
 ## Favorites
-
-> TODO: Add *at least* 1 git task that (a) that you'd like to remember, or (b) you think is really useful, and the git command(s) to do it.
+Useful command - Undo a specific commit
 ```
-(b) undo a specific commit
->> git revert <commitid>
+git revert <commitid>
 ```
-
 
 ---
 ## Resources
 
-
-[Git/devconnected][git-devconnected] Website provided the guildlines of using git commands.
-
 [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.     
 [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
+[Git/devconnected](https://devconnected.com/?s=git) Website provided the guildlines of using git commands.
 
 Try Git:
 
 [Learn Git Interactive Tutorial][LearnGitInteractive] excellent visual tutorial.   
 [Git Visualizer][VisualizeGit] execute Git commands in a web browser and see the results as a graph.    
 
-[git-devconnected]: https://devconnected.com/?s=git "devconnected/software-engineer"
 [ProGit]: https://www.git-scm.com/book/en/v2 "Pro Git online book on Git-scm.com"
 [ProGitPdf]: https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf "Pro Git v.2 PDF on AWS. Longer, book format."
 [LearnGitInteractive]: https://learngitbranching.js.org "Interactive graphical git tutorial"
