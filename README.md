@@ -125,31 +125,45 @@ test/
 
 ## Undo Changes and Recover Files
 
-> TODO: enter the git command to do each of these
 
 1.  Display the differences between your *working copy* of `a.py` and the `a.py` in the *local repository* (HEAD revision):
+```
+   git diff a.py
+```
 
 2. Display the differences between your *working copy* of `a.py` and the version in the *staging area*. (But, if a.py is not in the staging area this will compare working copy to HEAD revision):
+```
+   git diff HEAD a.py
+```
 
 3. **View changes to be committed:** Display the differences between files in the staging area and the versions in the repository. (You can also specify a file name to compare just one file.) 
+```
+   git diff
+```
 
 
 4. **Undo "git add":** If `main.py` has been added to the staging area (`git add main.py`), remove it from the staging area:
-
+```
+   git reset HEAD main.py
+```
 
 5. **Recover a file:** Command to replace your working copy of `a.py` with the most recent (HEAD) version in the repository.  This also works if you have deleted your working copy of this file.
-
+```
+   git checkout HEAD a.py
+```
 
 6. **Undo a commit:** Suppose you want to discard some commit(s) and move both HEAD and "master" to an earlier revision (an earlier commit)  Suppose the git commit graph looks like this (`aaaa`, etc, are the commit ids)
    ```
    aaaa ---> bbbb ---> cccc ---> dddd [HEAD -> master]
    ``` 
    The command to reset HEAD and master to the commit id `bbbb`:
-
+```
+   git reset --soft HEAD~1
+```
 
 7. **Checkout old code:** Using the above example, the command to replace your working copy with the files from commit with id `aaaa`:
    ```
-   todo your answer here
+   git reset --soft HEAD~2
    ```
     Note:
     - Git won't let you do this if you have uncommitted changes to any "tracked" files.
@@ -169,7 +183,13 @@ test/
 
 3. List all the files in the current branch of the repository:
    ```
-   todo your answer
+   .gitignore
+	README.md
+   a.py
+   b.py
+   out/a.exe
+   remote-commands.md
+   test/test_a.py
    ```
    example output:
    ```
