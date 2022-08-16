@@ -204,42 +204,56 @@ test/
 
 ## Branch and Merge
 
-> TODO write the commands to do each of these
 1. Create a new branch named `dev-foo`:
- 
+```
+   git branch dev-foo
+```
 2. Display the name of your current branch:
-
+```
+   git branch
+```
 3. List the names of **all** branches, including remote branches:
-
+``` 
+   dev-foo
+   * master
+```
 4. Switch your working copy to the branch named `dev-foo`:
-
+```
+   git checkout dev-foo
+```
 5. **Merge:** To merge the work from `dev-foo` into the master branch, perform these steps:
-   > TODO: write a description of the steps and the git command(s) for each step
-   1. step one
+   
+   1. step one - switch to master branch
       ```
-      git do something
+      git checkout master
       ```
-   2. step two
+   2. step two - merge to master branch
       ```
-      git do something else
+      git merge dev-foo
       ```
 
 
 6. Describe under what conditions a merge may fail.
-
+```
+When changed the same part of the same file differently in the two branches that are merging.
+```
 
 
 
 ## Favorites
 
 > TODO: Add *at least* 1 git task that (a) that you'd like to remember, or (b) you think is really useful, and the git command(s) to do it.
-
+```
+(b) undo a specific commit
+>> git revert <commitid>
+```
 
 
 ---
 ## Resources
 
-> TODO: Add your favorite Git resources (at least 1)
+
+[Git/devconnected][git-devconnected] Website provided the guildlines of using git commands.
 
 [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.     
 [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
@@ -249,6 +263,7 @@ Try Git:
 [Learn Git Interactive Tutorial][LearnGitInteractive] excellent visual tutorial.   
 [Git Visualizer][VisualizeGit] execute Git commands in a web browser and see the results as a graph.    
 
+[git-devconnected]: https://devconnected.com/?s=git "devconnected/software-engineer"
 [ProGit]: https://www.git-scm.com/book/en/v2 "Pro Git online book on Git-scm.com"
 [ProGitPdf]: https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf "Pro Git v.2 PDF on AWS. Longer, book format."
 [LearnGitInteractive]: https://learngitbranching.js.org "Interactive graphical git tutorial"
