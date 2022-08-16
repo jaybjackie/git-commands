@@ -92,23 +92,35 @@ test/
    ```
 
 5. Commit everything in the staging area to the repository.
+   ```
+   git commit -m "every files"
+   ```
 
 
 6. Describe 2 steps to configure the repository so git will ignore all files in the `out/` directory:
-   - step one
-   - step two
+   - create .gitignore file
+   - write the condition, in this case ._out/_. .
 
 7. Command to move all the .py files from `src` to the top-level directory of this repository, so they are also moved in the Git repo.
-
+   ```
+   git mv ./src/* ./
+   ```
 
 8. Commit this change with the message "moved src directory":
-
+   ```
+   git commit -m "moved src directory"
+   ```
 
 9. Command to add **all changed files** (but not untracked files) to the staging area using a single command.
 
+   ```
+   git add -u
+   ```
 
 10. **Delete** the file `c.py` from your working copy **and** the repository:
-
+   ```
+   git rm c.py
+   ```
 
 
 ## Undo Changes and Recover Files
