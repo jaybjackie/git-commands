@@ -21,8 +21,6 @@ By Kodchakan
 
 ## Using Git
 
-> TODO: Create a table of contents here.  Each line should be a clickable link to each part of this document or another file containing the questions and answers. One item per line.
-
 - [Basics](#basics)    
 - [Adding and Changing Things](#adding-and-changing-things)    
 - [Undo Changes and Recover Files](#undo-changes-and-recover-files)
@@ -133,12 +131,12 @@ test/
 
 1.  Display the differences between your *working copy* of `a.py` and the `a.py` in the *local repository* (HEAD revision):
 ```
-   git diff a.py
+   git diff HEAD a.py
 ```
 
 2. Display the differences between your *working copy* of `a.py` and the version in the *staging area*. (But, if a.py is not in the staging area this will compare working copy to HEAD revision):
 ```
-   git diff HEAD a.py
+   git diff a.py
 ```
 
 3. **View changes to be committed:** Display the differences between files in the staging area and the versions in the repository. (You can also specify a file name to compare just one file.) 
@@ -255,7 +253,7 @@ git revert <commitid>
 ## Resources
 
 [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable PDF is also available.     
-[Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
+[Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.   
 [Git/devconnected](https://devconnected.com/?s=git) Website provided the guildlines of using git commands.
 
 Try Git:
